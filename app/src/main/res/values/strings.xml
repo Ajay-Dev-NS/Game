@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Game</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rock">Rock</string>
+    <string name="paper">Paper</string>
+    <string name="select">Press any Button to Start the game (Win twice)</string>
+    <string name="scissors">scissors</string>
+    <string name="score">Score</string>
+    <string name="_0">0</string>
+    <string name="play">Play</string>
+    <string name="try_again">Try Again?</string>
+    <string name="about_text">The following game was created by \"N.S.AJAY DEV\",a 3rd yr ECE student studying in SASTRA University.
+        \n\n The app was developed as a project to be submitted for the campaign \"30 days of Kotlin\";.
+        \n\n For more about developer: \n https://linkedin.com/in/ajay-dev-n-s-67616b176
+    </string>
+    <string name="about">About</string>
+    <string name="rules_text">This is the 90\'s kids game known as \"Rock,Paper,Scissors\".
+        \n\n The rules are simple select any one of the shapes.
+    \n Rock wins scissors, losses to paper
+    \n Paper wins rock, losses to scissors
+    \n Scissors wins paper, losses to rock
+    \n\n WIN ANY TWO OF THE THREE ROUNDS
+    \n If not don\'t worry try again.
+        \n\n KINDLY ORIENT IN ONE DIRECTION TO PREVENT SCORE LOSS
+    </string>
+    <string name="rules">Rules</string>
+</resources>

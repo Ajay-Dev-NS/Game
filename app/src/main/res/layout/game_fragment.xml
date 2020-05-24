@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.GameFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/GameConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <Button
+            android:id="@+id/Rock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/rock"
+            app:layout_constraintBottom_toBottomOf="@+id/paper"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/paper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Scissors"
+            app:layout_constraintStart_toEndOf="@+id/Rock" />
+
+        <Button
+            android:id="@+id/Scissors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/scissors"
+            app:layout_constraintBottom_toBottomOf="@+id/paper"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/select"
+            android:textAppearance="@style/AppTheme"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/p1"
+            android:layout_width="105dp"
+            android:layout_height="124dp"
+            app:layout_constraintBottom_toBottomOf="@+id/p2"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@drawable/empty_dice" />
+
+        <ImageView
+            android:id="@+id/p2"
+            android:layout_width="105dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/empty_dice" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="148dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/score"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginBottom="48dp"
+            android:text="@string/_0"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/paper"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/score" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
